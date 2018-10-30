@@ -42,7 +42,7 @@
 			<attribute name="m2e-apt" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry excluding="**" kind="src" output="target/classes" path="conf">
+	<classpathentry excluding="**" kind="src" output="target/classes" path="src/conf">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>

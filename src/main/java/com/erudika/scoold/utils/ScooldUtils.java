@@ -172,7 +172,7 @@ public final class ScooldUtils {
 			String subject = lang.get("signin.welcome");
 			String body1 = lang.get("signin.welcome.body1") + "<br><br>";
 			String body2 = lang.get("signin.welcome.body2") + "<br><br>";
-			String body3 = "Best, <br>The Scoold team";
+			String body3 = "Best, <br>WISE-PaaS support team";
 
 			if (verifyEmail && !user.getActive() && !StringUtils.isBlank(user.getIdentifier())) {
 				Sysprop s = pc.read(user.getIdentifier());
@@ -182,7 +182,7 @@ public final class ScooldUtils {
 					pc.update(s);
 					token = getServerURL() + CONTEXT_PATH + SIGNINLINK + "/register?id=" + user.getId() + "&token=" + token;
 					body3 = "<b><a href=\"" + token + "\">" + lang.get("signin.welcome.verify") + "</a></b><br><br>";
-					body3 += "Best, <br>The Scoold team<br><br>";
+					body3 += "Best, <br>WISE-PaaS support team<br><br>";
 				}
 			}
 
@@ -202,7 +202,7 @@ public final class ScooldUtils {
 			String subject = lang.get("iforgot.title");
 			String body1 = "Open the link below to change your password:<br><br>";
 			String body2 = Utils.formatMessage("<b><a href=\"{0}\">RESET PASSWORD</a></b><br><br>", url);
-			String body3 = "Best, <br>The Scoold team<br><br>";
+			String body3 = "Best, <br>WISE-PaaS support team<br><br>";
 
 			model.put("logourl", Config.getConfigParam("small_logo_url", "https://scoold.com/logo.png"));
 			model.put("heading", lang.get("hello"));
