@@ -29,10 +29,10 @@ $(function () {
 	}
 
 	initMaterialize();
-
+/**
 	/**************************
 	 *    Google Maps API
-	 **************************/
+	 **************************
 
 	if (locationbox.length && !mapCanvas.length) {
 		var searchLocation = new google.maps.places.SearchBox(locationbox.get(0));
@@ -142,7 +142,7 @@ $(function () {
 	if (mapCanvas.length && mapCanvas.is(":visible")) {
 		initMap();
 	}
-
+*/
 	/****************************************************
      *					MISC FUNCTIONS
      ****************************************************/

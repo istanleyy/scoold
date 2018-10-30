@@ -43,7 +43,7 @@
 		#end
 		<script src="$!scriptslink/globals.js"></script>
 		#if ($includeGMapsScripts && $includeGMapsScripts == true)
-		<script type="text/javascript" src="http://maps.google.cn/maps/api/js?libraries=places&key=$!GMAPS_API_KEY"></script>
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places&key=$!GMAPS_API_KEY"></script>
 		#end
 	</head>
 	<body>
