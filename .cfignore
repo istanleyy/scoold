@@ -1,0 +1,12 @@
+.settings
+.vscode
+
+docs
+
+CNAME
+docker-compose.yml
+Dockerfile
+
+*.log
+
+Procfile

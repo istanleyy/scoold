@@ -1,0 +1,17 @@
+---  
+applications:   
+- name: qaforum-0.1.0
+  hosts:
+  - wiseqa
+  - qaforum-adviotsense-production
+  memory: 256M
+  disk_quota: 256M 
+  instances: 1
+  buildpack: https://github.com/cloudfoundry/java-buildpack.git
+  path: target/scoold-1.30.5.jar
+  #command: $PWD/.java-buildpack/open_jdk_jre/bin/java -cp $PWD/*:. -Dconfig.file=./application.conf -jar ./target/scoold-1.30.5.jar
+  env:      
+    org_id: be3d55c9-010c-421c-80cb-3d9ff3d218d0
+    org_name: AdvIoTSense
+    JAVA_OPTS: "-Xss320k -Xmx256m"
+    #JBP_CONFIG_JAVA_MAIN: '{"arguments":"-Dconfig.file=./application.conf"}'

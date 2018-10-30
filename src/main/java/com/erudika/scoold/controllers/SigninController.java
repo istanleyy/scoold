@@ -80,7 +80,7 @@ public class SigninController {
 		model.addAttribute("ldapLoginEnabled", !Config.getConfigParam("security.ldap.server_url", "").isEmpty());
 		model.addAttribute("passwordLoginEnabled", Config.getConfigBoolean("password_auth_enabled", false));
 		model.addAttribute("oa2LoginProvider", Config.getConfigParam("security.oauth.provider",
-				"Continue with OpenID Connect"));
+				"Continue with WISE-PaaS Login"));
 		return "base";
 	}
 
